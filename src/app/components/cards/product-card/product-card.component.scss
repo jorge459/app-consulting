@@ -1,0 +1,39 @@
+@import "../../../sharedscss/variables.scss";
+.card-product{
+  color: $secondary-color;
+  background-color: $card-background-color;
+  margin-left: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 10px 10px 10px 10px;
+}
+.card-icon{
+  width: 48px;
+  height: 48px;
+}
+.card-productTitle{
+  font-family: Circular-Bold;
+  font-size: 1.5em;
+  color: $third-color;
+}
+.card-productDescription{
+  color: $secondary-color;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+}
+.btn-more{
+  text-align: center;
+  text-decoration: none;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $third-color;
+  padding: 8px 20px;
+  border-radius: 100px;
+  max-width: 15vw;
+}
+.btn-more:hover{
+  background-color: $btn-colo-hover;
+}

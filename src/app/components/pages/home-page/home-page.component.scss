@@ -1,0 +1,42 @@
+@import "../../../sharedscss/variables.scss";
+@import "../../../sharedscss/normalize.scss";
+
+.home-page{
+  background-image:linear-gradient(rgba(65, 67,71,0.4),rgba(65, 67,71, 0.4)),url('../../../../assets/images/bacground-home-page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.body-info{
+  display: flex;
+  flex-direction: column;
+  // border: 2px solid green;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.body-title{
+  font-family: Circular-Bold;
+  color: $third-color;
+  font-size: 3.1em ;
+  font-weight: 400;
+  margin: 0;
+
+}
+.body-description{
+  font-family: Circular-Bold;
+  color: #363636;
+  font-size: 1.2em ;
+}
+.products{
+
+  display: flex;
+
+  height: 50vh;
+}
+.product-item{
+  // border: 2px solid blue;
+  align-self: flex-end;
+
+}

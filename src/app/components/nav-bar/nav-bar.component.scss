@@ -1,0 +1,49 @@
+@import "../../sharedscss/variables.scss";
+.nav-bar{
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+
+}
+.nav-bar-logo{
+  min-width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.logo{
+  margin-top: 25px;
+  align-self: center;
+  width: 250px;
+  height: 200px;
+}
+.nav-bar-content{
+  min-width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-bar-list{
+  display: flex;
+  align-self: center;
+  list-style: none;
+  margin-right: 100px;
+  gap: 40px;
+
+
+}
+.nav-bar-listItem{
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid $primary-color;
+}
+.nav-bar-listItem:hover{
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $third-color;
+}
+.nav-bar-listItem a{
+  text-decoration: none;
+  font-family: Circular-Bold;
+  color: $third-color;
+}
+

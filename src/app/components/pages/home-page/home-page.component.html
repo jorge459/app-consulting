@@ -1,0 +1,13 @@
+<div ngClass="home-page">
+  <app-nav-bar ngClass="app-nav-bar"></app-nav-bar>
+  <div ngClass="body-info">
+    <h1 ngClass="body-title">Chobos Consulting</h1>
+    <h2 ngClass="body-description">Pagina de Auditoria donde se ofrecen todo tipo de servicios para las empresas</h2>
+  </div>
+  <div class="products">
+    <ng-template ngFor let-service [ngForOf]="products" let-index="index">
+      <app-product-card [product]="service" ngClass="product-item" [indice]="index"></app-product-card>
+    </ng-template>
+  </div>
+
+</div>

@@ -1,0 +1,10 @@
+<div ngClass="card-product">
+  <img [src]="product.image_dir" alt="" ngClass="card-icon">
+  <p ngClass="card-productTitle">
+    {{product.title}}
+  </p>
+  <p ngClass="card-productDescription">
+    {{product.description}}
+  </p>
+  <a ngClass="btn-more" [routerLink]="links[indice]">Ver Mas</a>
+</div>

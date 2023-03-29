@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./app/sharedscss/normalize.scss";
+@import "./app/sharedscss/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@font-face {
+  font-family: Circular-Bold;
+  src: url('assets/fonts/Circular\ Bold.ttf');
+}
+
