@@ -1,0 +1,42 @@
+@import '../../../sharedscss/variables.scss';
+@import '../../../../styles.scss';
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+}
+.contact-section{
+  display: flex;
+}
+
+.contact-img{
+  background-image:linear-gradient(rgba(65, 67,71,0.3),rgba(65, 67,71, 0.3)),url('../../../../assets/images/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 40vw ;
+  max-width: 40vw;
+  min-height: 60vh;
+}
+.contact-info{
+  margin-left: 5vw;
+  min-width: 50vw;
+  border-left: 2px solid $primary-color;
+  border-top: 2px solid $primary-color;
+  display: flex;
+  flex-direction: column;
+
+}
+.contact-title{
+  align-self: center;
+  font-family: Circular-Bold;
+  font-size: 3em;
+}
+.contact-content{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  font-family: Circular-Bold;
+}

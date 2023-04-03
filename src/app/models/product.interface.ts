@@ -3,3 +3,10 @@ export interface IProduct {
   description?:String;
   image_dir?:String;
 }
+export interface IProductService{
+  type?:String;
+  title?:String;
+  description?:String;
+  importancia?:String;
+  servicio?:String;
+}

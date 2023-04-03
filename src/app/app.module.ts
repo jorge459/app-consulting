@@ -12,6 +12,7 @@ import { AuditoriaPageComponent } from './components/pages/auditoria-page/audito
 import { ConsultoriaPageComponent } from './components/pages/consultoria-page/consultoria-page.component';
 import { OutsourcingPageComponent } from './components/pages/outsourcing-page/outsourcing-page.component';
 import { InventarioPageComponent } from './components/pages/inventario-page/inventario-page.component';
+import { ProductServiceCardComponent } from './components/cards/product-service-card/product-service-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InventarioPageComponent } from './components/pages/inventario-page/inve
     AuditoriaPageComponent,
     ConsultoriaPageComponent,
     OutsourcingPageComponent,
-    InventarioPageComponent
+    InventarioPageComponent,
+    ProductServiceCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+@import '../../../sharedscss/variables.scss';
+.card-product-service{
+  color: $secondary-color;
+  // background-color: $card-background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 20vw;
+  // min-height: 40vh;
+  gap:15px;
+  // border-left: 10px solid green;
+
+}
+.card-product-service-0{
+  border-left: 10px solid $primary-color;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card-product-service-1{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-left: 10px solid $secondary-color;
+}
+.card-product-service-2{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-left: 10px solid $wave-color;
+}
+.card-product-service-3{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-left: 10px solid $card-background-color;
+}
+.card-product-serviceTitle{
+  font-family: Circular-Bold;
+  font-size: 1.8em;
+  color: $wave-color;
+  // color: $third-color;
+}
+.card-product-serviceTitleSecondary{
+  color: $wave-color;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.card-product-serviceDescription{
+  color: $secondary-color;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+}

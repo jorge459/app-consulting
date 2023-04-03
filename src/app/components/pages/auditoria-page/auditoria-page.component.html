@@ -1,7 +1,25 @@
-<p>TODOS LOS SERVICIOS DE AUDITORIA AQU</p>
-<ul>
-  <li>Auditoria Interna</li>
-  <li>Auditoria Tributaria</li>
-  <li>Auditoria Laboral</li>
-  <li>Auditoria Finaciera</li>
-</ul>
+<div ngClass="auditoria-page">
+  <div ngClass="page1">
+
+    <app-nav-bar ngClass="app-nav-bar"></app-nav-bar>
+    <div ngClass="auditoria-info">
+      <h2 ngClass="auditoria-infoTitle">Auditoria</h2>
+      <h2 ngClass="auditoria-infoDescription">Una auditoría es un análisis hecho por un profesional o grupo de profesionales calificados cuyo resultado permite reflejar la imagen contable, tributaria y/o laboral. Las auditorías también hacen posible conocer la imagen real del ambiente de control interno de una empresa. Es por eso que mediante el servicio de auditoría se evalúan de manera objetiva las evidencias, políticas y procedimientos de una organización o empresa.</h2>
+    </div>
+    <div ngClass="areas-especializadas">
+      <p ngClass="areas-especializadasTitle">Nuestras areas especializadas</p>
+      <div ngClass="areas-especializadasCategory">
+        <ng-template ngFor let-auditoria [ngForOf]="productAuditoria" let-i="index">
+          <a routerLink="/auditoria" fragment="auditoria-service-{{i}}" ngClass="category-link">{{auditoria.title}}</a>
+        </ng-template>
+      </div>
+
+    </div>
+  </div>
+  <div ngClass="auditoria-products">
+
+    <ng-template ngFor let-auditoria [ngForOf]="productAuditoria" let-i="index">
+      <app-product-service-card [product]="auditoria" [indice] ="i" id="auditoria-service-{{i}}"></app-product-service-card>
+    </ng-template>
+  </div>
+</div>

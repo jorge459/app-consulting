@@ -1,5 +1,25 @@
-<p>TODOS LOS SERVICIO DE INVENTARIADO AQUI</p>
-<ul>
-  <li>invetario  de Activo fijo</li>
-  <li>inventario de existencias</li>
-</ul>
+<div ngClass="inventario-page">
+  <div ngClass="page1">
+
+    <app-nav-bar ngClass="app-nav-bar"></app-nav-bar>
+    <div ngClass="inventario-info">
+      <h2 ngClass="inventario-infoTitle">Inventario</h2>
+      <h2 ngClass="inventario-infoDescription">Una auditoría es un análisis hecho por un profesional o grupo de profesionales calificados cuyo resultado permite reflejar la imagen contable, tributaria y/o laboral. Las auditorías también hacen posible conocer la imagen real del ambiente de control interno de una empresa. Es por eso que mediante el servicio de auditoría se evalúan de manera objetiva las evidencias, políticas y procedimientos de una organización o empresa.</h2>
+    </div>
+    <div ngClass="areas-especializadas">
+      <p ngClass="areas-especializadasTitle">Nuestras areas especializadas</p>
+      <div ngClass="areas-especializadasCategory">
+        <ng-template ngFor let-inventario [ngForOf]="productInventario" let-i="index" >
+          <a routerLink="/inventariado" fragment="invetario-service-{{i}}" ngClass="category-link">{{inventario.title}}</a>
+        </ng-template>
+      </div>
+
+    </div>
+  </div>
+  <div ngClass="consultoria-products">
+
+    <ng-template ngFor let-inventario [ngForOf]="productInventario" let-i="index">
+      <app-product-service-card [product]="inventario" [indice] ="i" id="invetario-service-{{i}}"></app-product-service-card>
+    </ng-template>
+  </div>
+</div>

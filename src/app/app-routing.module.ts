@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path:"auditoria",
-    component:AuditoriaPageComponent
+    component:AuditoriaPageComponent,
   },
   {
     path:"consultoria",
@@ -45,7 +45,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{anchorScrolling:'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
