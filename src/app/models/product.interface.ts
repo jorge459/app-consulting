@@ -1,12 +1,13 @@
 export interface IProduct {
-  title?:String;
+  id?:number;
+  name?:String;
   description?:String;
-  image_dir?:String;
 }
 export interface IProductService{
-  type?:String;
-  title?:String;
+  id?:number,
+  name?:String;
   description?:String;
   importancia?:String;
   servicio?:String;
+  product_id?:number;
 }

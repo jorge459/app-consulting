@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProductService } from '../../../models/product.interface';
 import { ProductService } from 'src/app/services/product.service';
+import axios from 'axios';
 
 @Component({
   selector: 'app-consultoria-page',
@@ -14,6 +15,6 @@ export class ConsultoriaPageComponent implements OnInit{
   productConsultoria:IProductService[] =[];
   indice =0;
   ngOnInit(): void {
-    this.productConsultoria = this.productService.getAllProductAsesoria();
+    axios.get("http://localhost:3000/products/consultoria").then(({data})=>{this.productConsultoria=data});
   }
 }

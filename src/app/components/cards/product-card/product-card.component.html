@@ -1,7 +1,7 @@
 <div ngClass="card-product">
-  <img [src]="product.image_dir" alt="" ngClass="card-icon">
+  <img [src]="images_dirs[indice]" alt="" ngClass="card-icon">
   <p ngClass="card-productTitle">
-    {{product.title}}
+    {{product.name}}
   </p>
   <p ngClass="card-productDescription">
     {{product.description}}

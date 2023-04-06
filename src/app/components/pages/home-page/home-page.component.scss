@@ -15,8 +15,7 @@
   align-self: center;
   font-family: Circular-Bold;
   color: $third-color;
-  font-size: 3.1em ;
-  font-weight: 400;
+  font-size: 3.1rem ;
   margin: 0;
   flex-grow: 2;
 
@@ -24,34 +23,35 @@
 .body-description{
   font-family: Circular-Bold;
   color: #363636;
-  font-size: 1.2em ;
+  font-size: 1.2rem ;
   align-self: center;
   text-align: center;
   flex-grow: 2;
 }
 .products{
   display: flex;
-  flex-grow: 4;
-  height: 20vh;
+  flex-grow: 1;
+  // height: 20vh;
   justify-content: center;
   flex-wrap: wrap;
-  // border: 2px solid blue;
+  border: 2px solid red;
   align-content: flex-end;
 }
 .product-item{
   flex-grow: 2;
   // border: 2px solid green;
   align-self: flex-end;
-  width: 24.8vw;
+  width: 24vw;
+  border: 2px solid yellow;
   height: 100%;
 
 }
 
-@media (max-width: 500px){
-  .home-page{
-    border: 4px dotted aqua;
-  }
-  .app-nav-bar{
-    width: 100vw;
-  }
-}
+// @media (max-width: 500px){
+//   .home-page{
+//     border: 4px dotted aqua;
+//   }
+//   .app-nav-bar{
+//     width: 100vw;
+//   }
+// }

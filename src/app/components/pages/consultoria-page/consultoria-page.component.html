@@ -10,7 +10,7 @@
       <p ngClass="areas-especializadasTitle">Nuestras areas especializadas</p>
       <div ngClass="areas-especializadasCategory">
         <ng-template ngFor let-consultoria [ngForOf]="productConsultoria" let-i="index" >
-          <a routerLink="/consultoria" fragment="consultoria-service-{{i}}" ngClass="category-link">{{consultoria.title}}</a>
+          <a routerLink="/consultoria" fragment="consultoria-service-{{i}}" ngClass="category-link">{{consultoria.name}}</a>
         </ng-template>
       </div>
 
