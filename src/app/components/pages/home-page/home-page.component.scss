@@ -7,9 +7,17 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 100vh;
   height: 100%;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap:1.5rem;
+  flex-grow: 2;
 }
 .body-title{
   align-self: center;
@@ -17,7 +25,7 @@
   color: $third-color;
   font-size: 3.1rem ;
   margin: 0;
-  flex-grow: 2;
+  // flex-grow: 2;
 
 }
 .body-description{
@@ -26,7 +34,7 @@
   font-size: 1.2rem ;
   align-self: center;
   text-align: center;
-  flex-grow: 2;
+  // flex-grow: 2;
 }
 .products{
   display: flex;
@@ -42,7 +50,7 @@
   // border: 2px solid green;
   align-self: flex-end;
   width: 24vw;
-  border: 2px solid yellow;
+  // border: 2px solid yellow;
   height: 100%;
 
 }
